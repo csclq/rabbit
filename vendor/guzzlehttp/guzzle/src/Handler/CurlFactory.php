@@ -55,6 +55,7 @@ class CurlFactory implements CurlFactoryInterface
             ? array_pop($this->handles)
             : curl_init();
         curl_setopt_array($easy->handle, $conf);
+        curl_setopt($easy->handle, CURLOPT_SSL_VERIFYPEER,0);           //禁止 cURL 验证对等证书（peer's certificate）。
 
         return $easy;
     }

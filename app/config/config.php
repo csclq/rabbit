@@ -13,8 +13,8 @@ return new \Phalcon\Config([
         'adapter' => 'Mysql',
         'host' => 'localhost',
         'username' => 'root',
-        'password' => '',
-        'dbname' => 'phal',
+        'password' => 'myAdmin',
+        'dbname' => 'gxc',
         'charset' => 'utf8',
     ],
 
@@ -31,8 +31,9 @@ return new \Phalcon\Config([
     ],
     'wechat' => [
         'app_id' => 'wxbcf68516881437e2',
-        'secret' => '2c8d5e5d50af9111cacaa157734b2a80',
-        'token' => 'pou08uog'
+        'secret' => '2c8d5e5d50af9111cacaa157734b2a80',//'c80c15b0c73f7d1af6c56908cb7adbe8',
+        'token' => 'pou08uog',
+//        'aes_key'   =>  'YHhd9wfeFc120rUB5VUTNXkYVdJluUXjvB5L0ejpUKk'
     ],
 
     /**

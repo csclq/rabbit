@@ -1,5 +1,5 @@
 <?php
-namespace Phal\Modules\Cli\Tasks;
+namespace App\Modules\Cli\Tasks;
 
 class MainTask extends \Phalcon\Cli\Task
 {

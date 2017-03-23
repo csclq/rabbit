@@ -58,6 +58,6 @@ $di->set('flash', function () {
 */
 $di->setShared('dispatcher', function() {
     $dispatcher = new Dispatcher();
-    $dispatcher->setDefaultNamespace('Phal\Modules\Frontend\Controllers');
+    $dispatcher->setDefaultNamespace('App\Modules\Frontend\Controllers');
     return $dispatcher;
 });

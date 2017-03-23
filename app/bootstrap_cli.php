@@ -41,7 +41,7 @@ $console = new ConsoleApp($di);
  * Register console modules
  */
 $console->registerModules([
-    'cli' => ['className' => 'Phal\Modules\Cli\Module']
+    'cli' => ['className' => 'App\Modules\Cli\Module']
 ]);
 
 /**
