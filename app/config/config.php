@@ -35,6 +35,11 @@ return new \Phalcon\Config([
         'token' => 'pou08uog',
 //        'aes_key'   =>  'YHhd9wfeFc120rUB5VUTNXkYVdJluUXjvB5L0ejpUKk'
     ],
+    'redis' => [
+        'host' => '127.0.0.1',
+        'port' => 6379,
+//        'password'  =>  '',
+    ],
 
     /**
      * if true, then we print a new line at the end of each CLI execution

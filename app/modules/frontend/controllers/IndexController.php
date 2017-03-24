@@ -84,6 +84,8 @@ class IndexController extends ControllerBase
     }
 
     public function testAction(){
+        $this->view->disable();
+        var_dump($this->redis);
     }
 }
 

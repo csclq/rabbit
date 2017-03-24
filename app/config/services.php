@@ -75,3 +75,16 @@ $di->setShared('weixin', function () {
 $di->setShared('xlsx', function () {
     return \Box\Spout\Writer\WriterFactory::create(\Box\Spout\Common\Type::XLSX);
 });
+
+$di->setShared('redis', function () {
+    try{
+        $config = $this->getConfig();
+        $redis= new redis();
+        $redis->connect($config->redis->host,$config->redis->port);
+        $redis->auth($config->redis->password);
+        return $redis;
+    }catch (Exception $e){
+        exit($e->getMessage());
+    }
+
+});
